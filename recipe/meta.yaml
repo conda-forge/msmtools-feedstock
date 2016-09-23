@@ -1,6 +1,6 @@
 {% set name = "msmtools" %}
-{% set version = "1.1.3" %}
-{% set sha256 = "0e96ea16139c9e58e710c8962ad37bb1941bac2a7827f5608eb1e9454bb9c29b" %}
+{% set version = "1.1.4" %}
+{% set sha256 = "ce4690748358f9b62dbebca1917426ecd6b6c298f436b90480012b245765de53" %}
 
 package:
   name: {{ name|lower }}
