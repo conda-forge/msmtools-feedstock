@@ -13,6 +13,18 @@ Summary: Tools for estimating and analyzing Markov state models
  and analysis of discrete state space Markov chains via Markov state models (MSM)'
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/msmtools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/msmtools-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/msmtools-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/msmtools-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/msmtools-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/msmtools-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msmtools/badges/version.svg)](https://anaconda.org/conda-forge/msmtools)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msmtools/badges/downloads.svg)](https://anaconda.org/conda-forge/msmtools)
+
 Installing msmtools
 ===================
 
@@ -33,7 +45,6 @@ It is possible to list all of the versions of `msmtools` available on your platf
 ```
 conda search msmtools --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -69,18 +80,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/msmtools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/msmtools-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/msmtools-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/msmtools-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/msmtools-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/msmtools-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msmtools/badges/version.svg)](https://anaconda.org/conda-forge/msmtools)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msmtools/badges/downloads.svg)](https://anaconda.org/conda-forge/msmtools)
 
 
 Updating msmtools-feedstock
