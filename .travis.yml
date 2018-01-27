@@ -9,15 +9,9 @@ osx_image: xcode6.4
 env:
   matrix:
     
-    - CONDA_NPY=111  CONDA_PY=27
-    - CONDA_NPY=112  CONDA_PY=27
-    - CONDA_NPY=113  CONDA_PY=27
-    - CONDA_NPY=111  CONDA_PY=35
-    - CONDA_NPY=112  CONDA_PY=35
-    - CONDA_NPY=113  CONDA_PY=35
-    - CONDA_NPY=111  CONDA_PY=36
-    - CONDA_NPY=112  CONDA_PY=36
-    - CONDA_NPY=113  CONDA_PY=36
+    - CONDA_PY=27
+    - CONDA_PY=35
+    - CONDA_PY=36
   global:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
     - secure: "D0X/3k6d0+/7mZFEzFYkY1QMs+eKrFUkKtO9IDbtuTWb8oneyq6XHs0uou3/S0qSIsxHKRLVTxaGWccZ9rPWQa8bRN3vmmkg/+hWm+LIZCaQfGWqwnOILpMr2qBnWEMLV+Oc0JFwd2MLrEloTkMRspbbrCMBhn1NDrBkbd0epWhg87gkqv3uUQNE/7kNCaTsIYrfPzIVlukefCsyYj9CtAHDHOn6cuBBi6yNmQKMqkm++6+HGJTkhLQoue1daPxosxGDkWl3pVeJjmzv4q3pGo/T6P2jusq/pvnE8iK5MXKQeG0/yJ7Df2arQGYlF/8SoL/I2CxexCyZABUKiCDzwBjW0GdfpOEmejABOoRzL2tcVFb7Emlit68UzOonu809nUqVdhj72DU0aFq5bDd9K6fCHEUf39lIAuaqrJ9MBBSx9WKjeC8q9n3By8PufBWwQC7Iz6lSsn2wJsY9rFpY4kxH+L/unNxV2hoNQy4nNfx7rVV5gjeNyDGfOmZyP6ibs8Vr56pdNypXuVv0Kx/Q8UapsspV6MrxdT2990V5JJlD1UqS9GdhxaUmR4N7VbIXClwyB+L6URaUfemuCew/qA9TdQhoymq75eO4O61tmcuth4oOnab9XaKXCMzdqwIkOf0CScYxar9jAg+fZbvwBap0YJFAeACmdp30SBWPx2I="
