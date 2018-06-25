@@ -1,6 +1,6 @@
 {% set name = "msmtools" %}
-{% set version = "1.2.1" %}
-{% set sha256 = "7282cec96360372e8440146dfe27848273bc3d83d18806ea56e3986a14d5bdec" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "d184266b5a81c04730f7fcfac09bbdb9936f78711262ddbe476d566c14e3f589" %}
 
 package:
   name: {{ name|lower }}
@@ -12,11 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python -B setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
     - cython >=0.24
