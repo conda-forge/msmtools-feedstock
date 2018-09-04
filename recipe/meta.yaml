@@ -12,25 +12,26 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - {{ compiler('c') }}
   host:
     - python
+    - pip
     - setuptools
     - cython >=0.24
+    # oldest numpy version to build our extensions for.
     - numpy 1.8.*  # [not (win and (py35 or py36))]
     - numpy 1.9.*  # [win and py35]
     - numpy 1.11.*  # [win and py36]
 
+
   run:
     - python
-    - numpy >=1.8  # [not (win and (py35 or py36))]
-    - numpy >=1.9  # [win and py35]
-    - numpy >=1.11  # [win and py36]
+    - {{ pin_compatible('numpy') }}
     - scipy
     - six
     - decorator
@@ -51,3 +52,4 @@ about:
 extra:
   recipe-maintainers:
     - marscher 
+
