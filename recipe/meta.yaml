@@ -1,6 +1,6 @@
 {% set name = "msmtools" %}
-{% set version = "1.2.3" %}
-{% set sha256 = "3f3c39a4558887575dd2bfdb0711b6d073446cb0b8767eafda16bfe0b92409c9" %}
+{% set version = "1.2.4" %}
+{% set sha256 = "9f4015dd20c651e8f90666a51ffece4aa6f030559b2d58a3dfa6b48e0e17f32b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  number: 1000
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -v"
 
 requirements:
   build:
@@ -23,12 +23,7 @@ requirements:
     - pip
     - setuptools
     - cython >=0.24
-    # oldest numpy version to build our extensions for.
-    - numpy 1.8.*  # [not (win and (py35 or py36))]
-    - numpy 1.9.*  # [win and py35]
-    - numpy 1.11.*  # [win and py36]
-
-
+    - numpy
   run:
     - python
     - {{ pin_compatible('numpy') }}
