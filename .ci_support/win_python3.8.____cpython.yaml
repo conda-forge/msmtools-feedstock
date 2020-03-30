@@ -14,3 +14,7 @@ python:
 - 3.8.* *_cpython
 python_impl:
 - cpython
+zip_keys:
+- - numpy
+  - python
+  - python_impl
