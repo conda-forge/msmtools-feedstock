@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -v"
-  skip: True  # [py27]
+  skip: True  # [py27 or python_impl == 'pypy']
 
 requirements:
   build:
@@ -38,7 +38,7 @@ test:
 
 about:
   home: http://github.com/markovmodel/msmtools
-  license: LGPL-3 
+  license: LGPL-3.0-or-later 
   license_file: LICENSE.txt
   summary: 'Tools for estimating and analyzing Markov state models'
   description: |
@@ -48,3 +48,4 @@ about:
 extra:
   recipe-maintainers:
     - marscher
+    - clonker
