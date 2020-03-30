@@ -38,7 +38,7 @@ test:
 
 about:
   home: http://github.com/markovmodel/msmtools
-  license: LGPL-3 
+  license: LGPL-3.0-or-later 
   license_file: LICENSE.txt
   summary: 'Tools for estimating and analyzing Markov state models'
   description: |
@@ -49,4 +49,3 @@ extra:
   recipe-maintainers:
     - marscher
     - clonker
-
