@@ -1,6 +1,6 @@
 {% set name = "msmtools" %}
-{% set version = "1.2.5" %}
-{% set sha256 = "e07b73ad9e4e8ef8aca82e6b5bb55f57f8400a65fb2fd656b521f72237a7310a" %}
+{% set version = "1.2.6" %}
+{% set sha256 = "2bfa6c02fff9ed9433c90d7ddc7860a8e2cf881fc67ec1ea5ef93f34a7e03541" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -v"
   skip: True  # [py27 or python_impl == "pypy"]
 
