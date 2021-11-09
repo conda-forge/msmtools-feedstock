@@ -14,7 +14,7 @@ source:
 build:
   number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -v"
-  skip: True  # [py27 or python_impl == "pypy"]
+  skip: True  # [python_impl == "pypy"]
 
 requirements:
   build:
