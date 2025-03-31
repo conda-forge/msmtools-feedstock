@@ -25,9 +25,10 @@ requirements:
     - pip
     - setuptools
     - cython >=0.24
-    - numpy
+    - numpy <2
   run:
     - python
+    - numpy <2
     - scipy
     - six
     - decorator
