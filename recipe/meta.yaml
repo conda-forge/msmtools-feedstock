@@ -12,22 +12,23 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 4
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -v"
   skip: True  # [python_impl == "pypy"]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
     - setuptools
     - cython >=0.24
-    - numpy
+    - numpy <2
   run:
     - python
-    - {{ pin_compatible('numpy') }}
+    - numpy <2
     - scipy
     - six
     - decorator
